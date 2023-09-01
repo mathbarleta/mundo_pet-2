@@ -1,0 +1,170 @@
+<!--
+    <?php
+    session_start();
+    include_once('config.php');
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: sing-in.php');
+    }
+    $logado = $_SESSION['email'];
+
+    $sql = "SELECT * FROM tb_client ORDER BY id_cliente DESC";
+
+    $result = $conexao->query($sql);
+
+    $cliente_id = $_SESSION["email"];
+    $cliente_nome = $_SESSION["cliente_nome"];
+?>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="client.css">
+</head>
+<body>
+<header>
+        <section id="top">
+            <div id="Logo">
+                <a href="../Main/index.html">
+                    <img src="Imagens/logo.png" alt="Logo">
+                </a>
+            </div>
+            <div id="Busca">
+                <input type="text" id="txtBusca" placeholder="Buscar..."/>
+                <button type="submit">
+                    <img src="Imagens/search.png" id="btnBusca" alt="Buscar"/>
+                </button>
+            </div>
+            <div id="Login">
+                <a href="../Login/sing-up.html">
+                    <img src="Imagens/profile.png" alt="profile">
+                </a>
+            </div>
+        </section>
+        <section id="bottom">
+            <div id="bottom-box">
+                <div class="dropdown">
+                    <a href="" class="dropbtn">
+                        <img src="Imagens/dog.png" alt="">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Ração</a>
+                        <a href="#">Petiscos e Ossos</a>
+                        <a href="#">Tapetes, Fraldas e Banheiros</a>
+                        <a href="#">Farmácia</a>
+                        <a href="#">Brinquedos</a>
+                        <a href="#">Coleiras, Guias e Peitorais</a>
+                        <a href="#">Beleza e Limpeza</a>
+                        <a href="#">Camas e Cobertores</a>
+                        <a href="#">Casas e Tocas</a>
+                        <a href="#">Acessórios de Alimentação</a>
+                        <a href="#">Acessórios de Transporte</a>
+                        <a href="#">Roupas</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="" class="dropbtn">
+                        <img src="Imagens/cat.png" alt="">
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="#">Ração</a>
+                      <a href="#">Petiscos</a>
+                      <a href="#">Areias e Banheiros</a>
+                      <a href="#">Farmácia</a>
+                      <a href="#">Arranhadores e Brinquedos</a>
+                      <a href="#">Beleza e Limpeza</a>
+                      <a href="#">Coleiras e Peitorais</a>
+                      <a href="#">Acessórios de Alimentação</a>
+                      <a href="#">Acessórios de Transporte</a>
+                      <a href="#">Camas, Almofadas e Tocas</a>
+                      <a href="#">Roupas</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="" class="dropbtn">
+                        <img src="Imagens/bird.png" alt="">
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="#">Alimentação</a>
+                        <a href="#">Gaiolas e Viveiros</a>
+                        <a href="#">Brinquedos e Poleiros</a>
+                        <a href="#">Acessórios</a>
+                        <a href="#">Farmácia</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="" class="dropbtn">
+                        <img src="Imagens/fish.png" alt="">
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="#">Alimentação</a>
+                      <a href="#">Equipamentos e Acessórios</a>
+                      <a href="#">Aquários e Beteiras</a>
+                      <a href="#">Tratamento de Água</a>
+                      <a href="#">Decoração</a>
+                      <a href="#">Farmácia</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="" class="dropbtn">
+                        <img src="Imagens/other.png" alt="">
+                    </a>
+                    <div class="dropdown-content">
+                      <a href="#">Coelhos</a>
+                      <a href="#">Hamster</a>
+                      <a href="#">Porquinho da Índia</a>
+                      <a href="#">Chinchilas</a>
+                      <a href="#">Furão</a>
+                      <a href="#">Tartarugas</a>
+                      <a href="#">Lagartos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section id="client">
+            <div>
+                <img src="Imagens/profile.png" alt="">
+                </h1>
+            </div>
+            <div>
+                <form action="" method="get">
+                    <h2>Sexo: <span>*</span></h2>
+                    <label for="sexo1">Feminino
+                        <input id="sexo1" type="radio" name="feminino" value="feminino"/>
+                    </label>
+
+                    <label for="sexo2">Masculino
+                        <input type="radio" id="sexo2" name="masculino" value="masculino" />
+                    </label>
+
+                    <h2>Nome Completo: <span>*</span></h2>
+                    <input type="text" name="" id="">
+                    </input>
+
+                    <h2>CPF: <span>*</span></h2>
+                    <input type="text" name="" id="">
+
+                    <h2>Senha: <span>*</span></h2>
+                    <input type="text" name="" id="">
+
+                    <h2>Email: <span>*</span></h2>
+                    <input type="text" name="" id="">
+                    
+                    <h2>DDD + Celular: <span>*</span></h2>
+                    <input type="text" name="" id="">
+                </form>
+            </div>
+        </section>
+        <section id="function">
+            
+        </section>
+    </main>
+</body>
+</html>

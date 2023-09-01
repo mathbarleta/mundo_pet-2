@@ -1,0 +1,378 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --red: #e74c3c;
+  --black: #000;
+  --img-color: #ededed;
+  --overlay: rgba(0, 0, 0, 0.75);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#top {
+  height: 90px;
+  width: 1615px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#Logo, #Busca, #Login{
+  display: flex;
+  align-items: center;
+}
+
+#Logo{
+  width: 250px;
+}
+
+#Logo img {
+  width: 70px;
+  background: none;
+}
+
+#Busca input{
+  border: solid 2px #0E67DA;
+  border-radius: 15px;
+  width: 470px;
+  height: 30px;
+  padding: 10px;
+}
+
+#Busca button{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1160px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+#Busca button:hover{
+  background: none;
+}
+
+#Busca img{
+  width: 30px;
+}
+
+#txtBusca{
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+
+#Login {
+  color: #157EE4;
+  font-size: 20px;
+  width: 250px;
+}
+
+#Login a{
+  text-decoration: none;
+  color: #157EE4;
+}
+
+#Login button {
+  width: 116px;
+  height: 66px;
+  border-radius: 30px;
+  border: 0;
+  background: radial-gradient(circle at top, #00C2FF, #0038FF);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 63px;
+}
+
+#bottom {
+  height: 92px;
+  background: radial-gradient(circle at top left, #00C2FF, #0038FF);
+  display: flex;
+}
+
+#bottom-box{
+  width: 1030px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottom a {
+  margin: auto;   
+}
+
+#bottom img {
+  width: 65px;
+  height: 65px;
+  background: none;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 2px solid #0E67DA;
+  border-radius: 20px;
+  margin-left: -90px;
+}
+
+.dropdown-content a {
+    color: #0E67DA;
+    padding: 12px;
+    margin: 0;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: #d9d9d9;
+    border-radius: 20px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.destaque{
+  margin-top: 35px;
+}
+
+.carousel {
+  width: 1500px;
+  height: 500px;
+  margin: auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#promo-sec{
+  display: flex;
+  width: 1500px;
+  margin: auto;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+
+.promo{
+  width: 450px;
+  height: 250px;
+  border-radius: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+.promo img{
+  width: 450px;
+}
+
+main h1{
+  font-size: 28px;
+  width: 1500px;
+  color: #000;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.produtos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1500px;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.produtos div{
+  width: 250px;
+  height: 410px;
+  border: 3px solid #0E67DA;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow:  7px 7px 14px #bebebe;
+}
+
+.produtos div a{
+  text-decoration: none;
+}
+
+.produtos div a img{
+  width: 210px;
+  height: 145px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.produtos div a h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #363636;
+  width: 210px;
+  margin: auto;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Define o número de linhas exibidas */
+  -webkit-box-orient: vertical;
+  text-align: left;
+}
+
+.produtos div a h3{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  font-style: oblique;
+  text-decoration: line-through;
+  color: #777777;
+  width: 210px;
+  margin: auto;
+  margin-top: 15px;
+  text-align: left;
+}
+
+#avaliados div a h3{
+  font-style: normal;
+  text-decoration: none;
+}
+
+.produtos div a h2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  color: #363636;
+  width: 210px;
+  margin: auto;
+  text-align: left;
+}
+
+.produtos div a p{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 23px;
+  width: 175px;
+  height: 45px;
+  color: #fff;
+  text-align: center;
+  background: radial-gradient(circle at top left, #0066ff, #0038FF);
+  border-radius: 20px;
+  width: 210px;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vantagens{
+  width: 1500px;
+  display: flex;
+  margin: auto;
+  margin-top: 35px;
+}
+
+.vantagens div{
+  margin: auto;
+  background-color: #dfdede;
+  text-align: center;
+  width: 330px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.vantagens div img{
+  width: 50px;
+  margin-top: 10px;
+}
+
+.vantagens div p{
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 10px;
+}
+
+.vantagens div a{
+  font-size: 20px;
+  color: #000;
+}
+
+footer {
+  font-family: a;
+  background: #E3E3E3;
+  color: var(--color-black1);
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 15px;
+  display: flex;
+  margin: auto;
+  margin-top: 35px;
+  padding: 35px;
+}
+
+#footLogo {
+  width: 100px;
+  margin-top: 50%;
+}
+
+.footUl {
+  list-style-type: none;
+  padding: 0;
+  line-height: 40px;
+}
+
+.footMain {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Report';
+}
+
+.defautLi {
+  color: gray;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Report';
+}
+
+.defautLi:hover {
+  color: #157EE4;
+  animation-delay: 1s;
+}
+
+#footImg {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.footImgGray {
+  width: 2.6vw;
+}
+
+#footImgOrange {
+  width: 2.6vw;
+}

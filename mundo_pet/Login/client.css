@@ -1,0 +1,213 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --red: #e74c3c;
+  --black: #000;
+  --img-color: #ededed;
+  --overlay: rgba(0, 0, 0, 0.75);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#top {
+  height: 90px;
+  width: 1615px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#Logo, #Busca, #Login{
+  display: flex;
+  align-items: center;
+}
+
+#Logo{
+  width: 250px;
+}
+
+#Logo img {
+  width: 70px;
+  background: none;
+}
+
+#Busca input{
+  border: solid 2px #0E67DA;
+  border-radius: 15px;
+  width: 470px;
+  height: 30px;
+  padding: 10px;
+}
+
+#Busca button{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1160px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+#Busca button:hover{
+  background: none;
+}
+
+#Busca img{
+  width: 30px;
+}
+
+#txtBusca{
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+}
+
+#Login {
+  color: #157EE4;
+  font-size: 20px;
+  width: 250px;
+}
+
+#Login img{
+  width: 70px;
+}
+
+#bottom {
+  height: 92px;
+  background: radial-gradient(circle at top left, #00C2FF, #0038FF);
+  display: flex;
+}
+
+#bottom-box{
+  width: 1030px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottom a {
+  margin: auto;   
+}
+
+#bottom img {
+  width: 65px;
+  height: 65px;
+  background: none;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border: 2px solid #0E67DA;
+  border-radius: 20px;
+  margin-left: -90px;
+}
+
+.dropdown-content a {
+    color: #0E67DA;
+    padding: 12px;
+    margin: 0;
+    margin: auto;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: #d9d9d9;
+    border-radius: 20px;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+main{
+  display: flex;
+  margin-top: 40px;
+  
+}
+
+#client{
+  width: 400px;
+  height: 710px;
+  border-radius: 50px;
+  box-shadow: 11px 11px 22px #d0d0d0;
+  margin: 0px 65px 0 278px;
+  
+}
+
+#client div{
+  margin: 26px;
+}
+
+#client div img{
+  width: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#client div h1{
+  font-size: 30px;
+  color: #6d6d6d;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#client div h2{
+  font-size: 15px;
+  color: #6d6d6d;
+  margin-top: 20px;
+}
+
+#client div h2:first-child{
+  margin: 0;
+}
+
+#client div span{
+  color: #0139FF;
+}
+
+#client div form{
+  display: flex;
+  flex-direction: column;
+}
+
+#client div form input{
+  width: 310px;
+  height: 10px;
+  border: 2px solid #6d6d6d;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#client div form label input{
+  width: 20px;
+  padding: 0px;
+}
+
+#function{
+  width: 900px;
+  height: 710px;
+  box-shadow: 11px 11px 22px #d0d0d0;
+}
