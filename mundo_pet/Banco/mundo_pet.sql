@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01/09/2023 às 18:15
+-- Tempo de geração: 14/09/2023 às 02:08
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.2.4
 
@@ -99,7 +99,6 @@ INSERT INTO `cliente` (`id_cliente`, `nome`, `sobrenome`, `cpf`, `email`, `telef
 
 CREATE TABLE `fornecedor` (
   `id_produto` int(11) NOT NULL,
-  `id_pedido` int(11) NOT NULL,
   `nome_fantasia` varchar(255) NOT NULL,
   `CNPJ` int(11) NOT NULL,
   `razao_social` varchar(255) NOT NULL,
